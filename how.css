@@ -1,0 +1,275 @@
+/*body of website*/
+
+* {
+  margin:10px;
+}
+
+.logo{
+width: 200px; 
+height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+html, body {
+  background-color: #f4ecc6;
+  height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.continer {
+  margin: 0% 
+}
+.sect { 
+    height: 200px;
+    position: relative;
+    border: 3px solid green; 
+  height: 80%;
+  padding-top: 50px;
+  padding-botton: 50px; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.subSect{
+  padding-top: 50px;
+  padding-botton: 50px; 
+  height: 60%;
+  background-color: #f4ecc6;
+  text-align: center;
+  font-size: 4em;
+}
+
+.bg1 {background-image: url("https://images.pexels.com/photos/442420/books-shelves-architecture-wood-442420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+.bg2 {background-image: url("https://images.pexels.com/photos/1154757/pexels-photo-1154757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+.bg3 {background-image: url("https://images.pexels.com/photos/1044329/pexels-photo-1044329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+
+.footer {  
+ 
+  height: 8%;
+  background-color: #45717c;
+  text-align: center;
+  font-size: 4px;
+  padding-top: 20%;
+}
+
+
+
+
+/*menu*/
+
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f9ecb1;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #9db599;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+
+
+
+/*overlays on green*/
+
+
+.portfolioNav {
+  background-color: #45717c;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+/* line 9, ../scss/_portfolioMenu.scss */
+.portfolioLinks {
+  background-color: #45717c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 16, ../scss/_portfolioMenu.scss */
+.portfolioLinks img {
+  border-style: solid;
+  border-color: #7f997a;
+  border-width: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+/* line 25, ../scss/_portfolioMenu.scss */
+.container {
+  position: relative;
+}
+/* line 29, ../scss/_portfolioMenu.scss */
+.image {
+  display: block;
+  height: auto;
+}
+/* line 35, ../scss/_portfolioMenu.scss */
+.overlayw {
+  position: absolute;
+  top: 0;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #728c6f;
+  border-radius: 10px;
+}
+/* line 48, ../scss/_portfolioMenu.scss */
+.container:hover .overlayw,
+.container:focus .overlayw {
+  opacity: 0.90;
+}
+/* line 53, ../scss/_portfolioMenu.scss */
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 61, ../scss/_portfolioMenu.scss */
+.portfolioLinks p {
+  color: white;
+  font-size: 20px;
+}
+/* line 65, ../scss/_portfolioMenu.scss */
+.portfolioLinks a {
+  text-transform: uppercase;
+  color: #08a063;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 72, ../scss/_portfolioMenu.scss */
+.portfolioLinks a:hover,
+.portfolioLinks a:focus {
+  color: #00b66d;
+}
+/* line 76, ../scss/_portfolioMenu.scss */
+.portfolioLinks h3 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 24px;
+}
+/* line 82, ../scss/_portfolioMenu.scss */
+.porttitle h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+}
+/* line 88, ../scss/_portfolioMenu.scss */
+.porttitle .line {
+  content: '';
+  height: 4px;
+  background: #45717c;
+  border: none;
+  margin-bottom: 20px;
+}
+@media (max-width: 550px) {
+  /* line 97, ../scss/_portfolioMenu.scss */
+  .portfolioLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 101, ../scss/_portfolioMenu.scss */
+  .container .overlay {
+    opacity: 0.90;
+  }
+  /* line 104, ../scss/_portfolioMenu.scss */
+  .overlayw:nth-child(2) {
+    height: 310px;
+  }
+  /* line 108, ../scss/_portfolioMenu.scss */
+  .overlayw:nth-child(3) {
+    height: 310px;
+  }
+}
+@media (min-width: 551px) and (max-width: 1115px) {
+  /* line 113, ../scss/_portfolioMenu.scss */
+  .portfolioLinks img {
+    width: 27vw;
+  }
+  /* line 116, ../scss/_portfolioMenu.scss */
+  .overlayw {
+    bottom: 10px;
+  }
+}
+@media (min-width: 1115px) {
+  /* line 122, ../scss/_portfolioMenu.scss */
+  .portfolioLinks img {
+    width: auto;
+  }
+  /* line 125, ../scss/_portfolioMenu.scss */
+  .overlayw {
+    bottom: 10px;
+  }
+}
+@media (min-width: 551px) and (max-width: 1000px) {
+  /* line 131, ../scss/_portfolioMenu.scss */
+  .portfolioLinks p {
+    display: none;
+  }
+}
+@media (min-width: 551px) and (max-width: 950px) {
+  /* line 137, ../scss/_portfolioMenu.scss */
+  .container .overlay {
+    opacity: 0.90;
+    
+  }
+}
